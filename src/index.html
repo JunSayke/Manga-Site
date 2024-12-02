@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hunyo</title>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: {
+                primary: "rgb(18, 18, 18)",
+                secondary: "#222222",
+              },
+              primary: "rgb(145 63 226)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-background-primary">
+    <div class="mx-24 mx-auto mt-16 max-w-[1220px]">
+      <main class="float-left min-h-64 w-full border border-2">
+        <!-- Carousel -->
+        <div></div>
+        <!-- Popular Today -->
+        <div></div>
+        <!-- Latest Updates -->
+        <div>
+          <h6>Latest Updates</h6>
+          <ul>
+            <li></li>
+          </ul>
+        </div>
+      </main>
+      <!-- Popular -->
+      <aside class="float-right min-h-64 w-full border border-2">
+        <div class="bg-background-secondary h-fit w-full text-white">
+          <h6 class="border-b-[1px] p-2 text-sm font-bold">Popular</h6>
+          <div
+            class="flex rounded-[2px] bg-[#333] p-2 text-center text-sm font-medium"
+          >
+            <button
+              type="button"
+              class="hover:bg-primary w-full rounded-[4px] transition duration-200"
+            >
+              Weekly
+            </button>
+            <button
+              type="button"
+              class="hover:bg-primary w-full rounded-[4px] transition duration-200"
+            >
+              Monthly
+            </button>
+            <button
+              type="button"
+              class="hover:bg-primary w-full rounded-[4px] transition duration-200"
+            >
+              All
+            </button>
+          </div>
+          <ol>
+            <li class="p-2">
+              <div
+                class="text-8 size-[25px] rounded-[4px] border-[0.5px] border-solid border-gray-500 text-center leading-5 text-gray-500"
+              >
+                <span>1</span>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
