@@ -3,42 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet" />
     <title>Hunyo</title>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              background: {
-                primary: "rgb(18, 18, 18)",
-                secondary: "#222222",
-              },
-              primary: "rgb(145 63 226)",
-            },
-          },
-        },
-      };
-    </script>
   </head>
-  <body class="bg-background-primary">
-    <div class="mx-24 mx-auto mt-16 max-w-[1220px]">
-      <main class="float-left min-h-64 w-full border border-2">
+  <body class="bg-[rgb(18_18_18)]">
+    <header
+      class="mx-auto flex h-[55px] items-center justify-between bg-purple-500 px-10"
+    >
+      <div class="flex items-center gap-x-6">
+        <a class="size-10 sm:size-12" href="/">
+          <img alt="logo" class="object-cover" src="/" />
+        </a>
+        <ul class="m-0 p-0">
+          <li>
+            <a href="/src/index.html"
+              ><span
+                class="block pb-0 pl-[8px] pr-[10px] pt-0 text-[13px] leading-[42px] text-white hover:bg-gray-900 hover:bg-opacity-40 hover:text-white"
+                >Home</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="">
+      <main class="box">
         <!-- Carousel -->
         <div></div>
         <!-- Popular Today -->
         <div></div>
         <!-- Latest Updates -->
-        <div>
-          <h6>Latest Updates</h6>
-          <ul>
-            <li></li>
+        <div class="box bg-[rgb(34_34_34)] text-white">
+          <div class="border-b-[1px] border-gray-500 p-2">
+            <h5>Latest Updates</h5>
+          </div>
+          <ul class="my-5 px-5">
+            <li class="flex gap-x-5">
+              <a href="/">
+                <img
+                  alt="thumbnail"
+                  src="https://gg.asuracomic.net/storage/media/36/conversions/d86aab25-thumb-small.webp"
+                  class="w-[100px] rounded object-cover"
+                />
+              </a>
+              <div class="w-full">
+                <h6 class="w-[200px] truncate">
+                  The Heavenly Demon Can't Live A Normal Life
+                </h6>
+                <ul>
+                  <li class="flex justify-between">
+                    <span>
+                      <a href="/">Chapter 1</a>
+                    </span>
+                    <span>time ago</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
       </main>
       <!-- Popular -->
-      <aside class="float-right min-h-64 w-full border border-2">
-        <div class="bg-background-secondary h-fit w-full text-white">
+      <aside class="w-full">
+        <div
+          class="bg-background-secondary h-fit w-full bg-[rgb(34_34_34)] text-white"
+        >
           <h6 class="border-b-[1px] p-2 text-sm font-bold">Popular</h6>
           <div
             class="flex rounded-[2px] bg-[#333] p-2 text-center text-sm font-medium"
