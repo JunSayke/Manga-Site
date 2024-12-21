@@ -1625,6 +1625,11 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.-mx-5 {
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
 .\!mb-2 {
   margin-bottom: 0.5rem !important;
 }
@@ -1667,8 +1672,8 @@ video {
   height: 25px;
 }
 
-.h-\[40px\] {
-  height: 40px;
+.h-\[300px\] {
+  height: 300px;
 }
 
 .h-\[55px\] {
@@ -1682,14 +1687,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[400px\] {
-  height: 400px;
-}
-
-.h-\[300px\] {
-  height: 300px;
 }
 
 .w-\[130px\] {
@@ -1728,6 +1725,10 @@ video {
   flex-wrap: wrap;
 }
 
+.place-content-center {
+  place-content: center;
+}
+
 .items-center {
   align-items: center;
 }
@@ -1757,10 +1758,6 @@ video {
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-}
-
-.gap-y-5 {
-  row-gap: 1.25rem;
 }
 
 .gap-y-2 {
@@ -1798,10 +1795,6 @@ video {
 }
 
 .border-\[1px\] {
-  border-width: 1px;
-}
-
-.border {
   border-width: 1px;
 }
 
@@ -1863,16 +1856,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
-.bg-\[rgb\(52_52_52\)\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(52 52 52 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[rgb\(233_234_237\)\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 234 237 / var(--tw-bg-opacity, 1));
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -1903,14 +1886,6 @@ video {
   padding: 1.25rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.\!p-2 {
-  padding: 0.5rem !important;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1939,6 +1914,11 @@ video {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .\!pb-5 {
@@ -1991,10 +1971,6 @@ video {
   line-height: 1.25rem;
 }
 
-.leading-4 {
-  line-height: 1rem;
-}
-
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
@@ -2013,21 +1989,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
-.\!text-white {
-  --tw-text-opacity: 1 !important;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
-}
-
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity, 1));
-}
-
-.text-\[\#059e9a\] {
-  --tw-text-opacity: 1;
-  color: rgb(5 158 154 / var(--tw-text-opacity, 1));
 }
 
 .text-opacity-75 {
@@ -2172,14 +2133,6 @@ video {
   text-decoration-line: none;
 }
 
-.hover\:prose-a\:bg-opacity-50 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
-  --tw-bg-opacity: 0.5;
-}
-
-.hover\:prose-a\:bg-opacity-75 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
-  --tw-bg-opacity: 0.75;
-}
-
 .hover\:prose-a\:bg-opacity-90 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
   --tw-bg-opacity: 0.9;
 }
@@ -2194,28 +2147,12 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.hover\:prose-a\:text-opacity-0 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
-  --tw-text-opacity: 0;
-}
-
-.hover\:prose-a\:text-opacity-100 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
-  --tw-text-opacity: 1;
-}
-
-.hover\:prose-a\:text-opacity-50 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
-  --tw-text-opacity: 0.5;
-}
-
 .hover\:prose-a\:text-opacity-75 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
   --tw-text-opacity: 0.75;
 }
 
 .hover\:prose-a\:text-opacity-90 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
   --tw-text-opacity: 0.9;
-}
-
-.hover\:prose-a\:text-opacity-80 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover {
-  --tw-text-opacity: 0.8;
 }
 
 .prose-ul\:m-0 :is(:where(ul):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2242,30 +2179,8 @@ video {
   border-width: 1px;
 }
 
-.prose-li\:border-\[1px\] :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  border-width: 1px;
-}
-
-.prose-li\:border-l-2 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  border-left-width: 2px;
-}
-
-.prose-li\:border-l-4 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  border-left-width: 4px;
-}
-
 .prose-li\:border-l-8 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   border-left-width: 8px;
-}
-
-.prose-li\:border-green-500 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-border-opacity: 1;
-  border-color: rgb(34 197 94 / var(--tw-border-opacity, 1));
-}
-
-.prose-li\:border-gray-200 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity, 1));
 }
 
 .prose-li\:border-gray-500 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2273,23 +2188,9 @@ video {
   border-color: rgb(107 114 128 / var(--tw-border-opacity, 1));
 }
 
-.prose-li\:border-l-white :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(255 255 255 / var(--tw-border-opacity, 1));
-}
-
-.prose-li\:border-l-black :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-border-opacity: 1;
-  border-left-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
-}
-
 .prose-li\:border-l-orange-500 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   --tw-border-opacity: 1;
   border-left-color: rgb(249 115 22 / var(--tw-border-opacity, 1));
-}
-
-.prose-li\:border-opacity-50 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  --tw-border-opacity: 0.5;
 }
 
 .prose-li\:bg-\[\#059e9a\] :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2301,24 +2202,14 @@ video {
   padding: 0px;
 }
 
-.prose-li\:px-4 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.prose-li\:px-6 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .prose-li\:py-2 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.prose-li\:px-5 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-}
-
-.prose-li\:px-6 :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .prose-li\:text-white :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
@@ -2328,6 +2219,21 @@ video {
 
 .prose-img\:m-0 :is(:where(img):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
   margin: 0px;
+}
+
+.prose-img\:mx-auto :is(:where(img):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prose-img\:my-1 :is(:where(img):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.prose-img\:my-2 :is(:where(img):not(:where([class~="not-prose"],[class~="not-prose"] *))) {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .dark\:bg-\[\#222222\]:is(.dark *) {
@@ -2355,17 +2261,7 @@ video {
   background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
 }
 
-.dark\:text-white:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-}
-
 .dark\:prose-a\:bg-purple-500 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
-}
-
-.dark\:hover\:prose-a\:bg-purple-500 :is(:where(a):not(:where([class~="not-prose"],[class~="not-prose"] *))):hover:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(168 85 247 / var(--tw-bg-opacity, 1));
 }
@@ -2382,4 +2278,11 @@ video {
 .dark\:prose-li\:bg-\[rgb\(52_52_52\)\] :is(:where(li):not(:where([class~="not-prose"],[class~="not-prose"] *))):is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(52 52 52 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
 }
